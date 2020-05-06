@@ -12,7 +12,7 @@ namespace calculadora
             
             inicio:
             Console.Clear();
-            for (int i = 0; i <= 1; i++)
+            for (int i = 0; i < numeros.Length; i++)
             {
                 Console.WriteLine("Informe o seu "+(i+1)+"º valor:");
                 numeros[i] = Convert.ToInt32(Console.ReadLine()); 
@@ -25,7 +25,7 @@ namespace calculadora
             +" '-'-> Subtração \n "
             +" '*'-> Multiplicação \n "
             +" '/'-> Divisão \n ");
-            operador = char.Parse(Console.ReadLine());
+            operador = Console.ReadLine();
             switch (operador)
             {
                 case "+":

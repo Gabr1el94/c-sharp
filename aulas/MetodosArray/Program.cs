@@ -14,7 +14,7 @@ namespace MetodosArray
            //Random
            Console.WriteLine("Random");
            Random random = new Random();
-           for (int i = 0; i < vetor.Length; i++)
+           for (int i = 0; i < vetor1.Length; i++)
            {
                 vetor1[i] = random.Next(50);
            }
@@ -44,7 +44,7 @@ namespace MetodosArray
 
             // CopyTo(Ar_origrm,Ar_destino,qtd_elementos)
             Console.WriteLine("CopyTo");
-            vetor1.Copy(vetor3,0);
+            vetor1.CopyTo(vetor3,0);
             foreach (var number in vetor3)
             {
                 Console.WriteLine(number);
@@ -60,9 +60,9 @@ namespace MetodosArray
             Console.WriteLine("-----------------------------------------");
 
             Console.WriteLine("GetUpperBound");
-            int MenorIndiceVetor = vetor1.GetUpperBound(0);
-            int MenorIndiceMatriz_D1 = matriz.GetUpperBound(1);
-            Console.WriteLine("Maior Índice do vetor1 {0}",MenorIndiceVetor);
+            int MenorIndiceVetorBound = vetor1.GetUpperBound(0);
+            int MenorIndiceMatrizBound_D1 = matriz.GetUpperBound(1);
+            Console.WriteLine("Maior Índice do vetor1 {0}",MenorIndiceVetorBound);
 
             Console.WriteLine("-----------------------------------------");
 
@@ -89,7 +89,7 @@ namespace MetodosArray
             //Reverse ex - [1,2,3] = [3,2,1]
             Console.WriteLine("Reverse");
             Array.Reverse(vetor1);
-            foreach (var item in vetor)
+            foreach (var item in vetor1)
             {
                 Console.WriteLine(item);
             }
@@ -99,13 +99,13 @@ namespace MetodosArray
             //SetValue(object valor)
             Console.WriteLine("SetValue");
             vetor2.SetValue(99,0);
-            for (int i = 0; i < vetor2.length; i++)
+            for (int i = 0; i < vetor2.Length; i++)
             {
-               vetor2.SetValue[0,i]; 
+               vetor2.SetValue(0,i); 
             }
 
             Console.WriteLine("Vetor 2");
-            foreach (var item in vetor)
+            foreach (var item in vetor2)
             {
                 Console.WriteLine(item);
             }

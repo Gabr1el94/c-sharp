@@ -9,8 +9,8 @@ namespace ConstrutorDestrutor
             string nome;
             Console.WriteLine("Informe o nome do jogador!");
             nome = Console.ReadLine();          
-            Jogador jogador = new Jogador(nome);
-            Console.WriteLine(jogador.nome);
+            Jogador jogador = new Jogador(nome,50,true);
+            jogador.info();
         }
     }
 }

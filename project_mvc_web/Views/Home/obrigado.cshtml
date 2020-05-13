@@ -1,0 +1,18 @@
+@model project_mvc_web.Models.Convidados
+
+@{
+    ViewData["Title"] = "obrigado";
+}
+
+<p>Obrigado pelo seu registro, @Model.Nome .</p>
+
+@if (Model.Present==true)
+{
+    <p>Ficará à sua espera para a festa</p>
+}else{
+    <p>Tenho imensa pena de não poder vir a minha festa</p>
+}
+
+<div>
+    Clique <a asp-action="ListConvidados">AQUI</a> para ver a lista de convidados
+</div>

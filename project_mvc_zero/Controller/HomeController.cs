@@ -1,4 +1,5 @@
 using System;
+using project_mvc_zero.ViewModels;
 using Microsoft.AspNetCore.Mvc;
 namespace project_mvc_zero.Controler
 {
@@ -9,7 +10,12 @@ namespace project_mvc_zero.Controler
 
         public IActionResult Index()
         {
-            return View();
+            Cliente cliente = new Cliente(){
+                nome="Gabriel",
+                email="biel@biel.com",
+                telefone="123456"
+            };
+            return View(cliente);
         }
 
          public IActionResult pag1()

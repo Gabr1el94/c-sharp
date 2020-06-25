@@ -9,7 +9,7 @@ namespace crud_project.Models
 
         }
 
-        public DbSet<Candidato> Candidado { get; set; }  
+        public DbSet<Candidato> Candidato { get; set; }  
 
         protected override void OnModelCreating(ModelBuilder modelBuilder){
 

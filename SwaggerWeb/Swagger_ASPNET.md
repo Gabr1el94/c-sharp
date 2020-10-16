@@ -101,7 +101,7 @@ i) Adicione nas classe "Startup.cs" pelo método "ConfigureServices" informaçõ
                 });
             });
 ```
-ii)Habilitar Swagger com o nome da requisição no método "Configure":
+ii)Habilitar Swagger com o nome da requisição Swagger no método "Configure":
 ```
 app.UseSwagger();
 app.UseSwaggerUI(c =>{
@@ -112,5 +112,11 @@ app.UseSwaggerUI(c =>{
 haja erro ou dependências do projeto;
 **
 > dotnet build
+
+**8) Start Project;
+**
+> dotnet run
+
+**Acesso Swagger:** localhost:5000|5001/swagger 
 
 Espero que tenha gostado e bom aproveito! 
